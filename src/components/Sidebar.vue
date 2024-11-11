@@ -2,6 +2,7 @@
     export default {
         name: "Sidebar",
     };
+    import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 
@@ -11,19 +12,19 @@
             <div class="profile-pic">
                 <span>JS</span>
             </div>
-            <a class="name">Jatinder Sohal</a>
+            <RouterLink class="name" to="/">Jatinder Sohal</RouterLink>
             <p class="tagline">Computer Science Graduate</p>
         </div>
         <nav class="nav-links">
-            <a href="#">Current Project</a>
-            <a href="#">All Projects</a>
-            <a href="#">Experiance & Education</a>
-            <a href="#">Skills</a>
+            <RouterLink to="/currentProject">Current Project</RouterLink>
+            <RouterLink to="/allProjects">All Projects</RouterLink>
+            <RouterLink to="/education&experiance">Education & Experiance</RouterLink>
+            <RouterLink to="/skills">Skills</RouterLink>
         </nav>
         <div class="icons">
-            <a href="#">Github</a>
-            <a href="#">Resume</a>
-            <a href="#">Email</a>
+            <RouterLink to="#">Github</RouterLink>
+            <RouterLink to="#">Resume</RouterLink>
+            <RouterLink to="#">Email</RouterLink>
 
         </div>
     </aside>
